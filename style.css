@@ -1,0 +1,171 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111315;
+    color: #e8e8e8;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* =========================
+   JOBSHEET
+========================= */
+
+.jobsheet {
+    min-height: 100vh;
+    padding: 80px 0;
+
+    background: #111315;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.section-title p {
+    color: #f0a04b;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    margin-top: 5px;
+
+    font-size: 32px;
+    color: #eeeeee;
+}
+
+
+/* =========================
+   JOBSHEET CARD
+========================= */
+
+.jobsheet-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.jobsheet-card {
+    padding: 25px;
+
+    background: #181b1e;
+
+    border: 1px solid #292d31;
+    border-radius: 7px;
+
+    transition: 0.25s;
+}
+
+.jobsheet-card:hover {
+    border-color: #f0a04b;
+    transform: translateY(-4px);
+}
+
+.jobsheet-card span {
+    color: #f0a04b;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.jobsheet-card h3 {
+    margin: 10px 0;
+
+    color: #eeeeee;
+
+    font-size: 20px;
+}
+
+.jobsheet-card p {
+    margin-bottom: 20px;
+
+    color: #888888;
+
+    font-size: 14px;
+}
+
+.jobsheet-card a {
+    color: #f0a04b;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.jobsheet-card a:hover {
+    color: #ffc078;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 25px 0;
+
+    background: #0c0e10;
+
+    color: #777777;
+
+    border-top: 1px solid #292d31;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 750px) {
+
+    .jobsheet-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .jobsheet {
+        padding: 60px 0;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .jobsheet-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
